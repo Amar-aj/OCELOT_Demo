@@ -51,6 +51,21 @@ app.MapGet("/catalog/demo-weatherforecast", () =>
 .WithName("Catalog Demo GetWeatherForecast")
 .WithOpenApi();
 
+app.MapGet("/catalog/demo-weatherforecast/{data:int}", (int data) =>
+{
+    var forecast = Enumerable.Range(1, data).Select(index =>
+        new WeatherForecast
+        (
+            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
+            Random.Shared.Next(-20, 55),
+            summaries[Random.Shared.Next(summaries.Length)]
+        ))
+        .ToArray();
+    return forecast;
+})
+.WithName("Catalog Demo GetWeatherForecast By Params")
+.WithOpenApi();
+
 app.Run();
 
 internal record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
