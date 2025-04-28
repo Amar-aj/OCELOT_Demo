@@ -7,6 +7,9 @@
       "UpstreamPathTemplate": "/catalog/{everything}",
       "UpstreamHttpMethod": [ "GET" ],
       "DownstreamPathTemplate": "/catalog/{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -18,8 +21,9 @@
     },
     {
       "UpstreamPathTemplate": "/auth/{everything}",
-      "UpstreamHttpMethod": [ "GET" ],
+      "UpstreamHttpMethod": [ "GET", "POST" ],
       "DownstreamPathTemplate": "/auth/{everything}",
+     
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -53,4 +57,5 @@
       ]
     }
   ]
+
 }
