@@ -5,8 +5,37 @@ VisualStudioVersion = 17.12.35506.116 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0E4E05E4-88BA-49A3-AF7C-3DDF4FDA9964}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi.Catalog", "WebApi.Catalog\WebApi.Catalog.csproj", "{51B31F98-70CE-4BB0-BB37-D3832B8395BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi.Authentication", "WebApi.Authentication\WebApi.Authentication.csproj", "{1024754A-912A-4306-9B9C-1668FC772CC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApp\WebApp.csproj", "{EDA9AC00-66A7-44B8-82CF-7837AED0102E}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51B31F98-70CE-4BB0-BB37-D3832B8395BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51B31F98-70CE-4BB0-BB37-D3832B8395BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51B31F98-70CE-4BB0-BB37-D3832B8395BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51B31F98-70CE-4BB0-BB37-D3832B8395BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1024754A-912A-4306-9B9C-1668FC772CC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1024754A-912A-4306-9B9C-1668FC772CC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1024754A-912A-4306-9B9C-1668FC772CC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1024754A-912A-4306-9B9C-1668FC772CC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDA9AC00-66A7-44B8-82CF-7837AED0102E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDA9AC00-66A7-44B8-82CF-7837AED0102E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDA9AC00-66A7-44B8-82CF-7837AED0102E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDA9AC00-66A7-44B8-82CF-7837AED0102E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{51B31F98-70CE-4BB0-BB37-D3832B8395BA} = {0E4E05E4-88BA-49A3-AF7C-3DDF4FDA9964}
+		{1024754A-912A-4306-9B9C-1668FC772CC2} = {0E4E05E4-88BA-49A3-AF7C-3DDF4FDA9964}
+		{EDA9AC00-66A7-44B8-82CF-7837AED0102E} = {0E4E05E4-88BA-49A3-AF7C-3DDF4FDA9964}
 	EndGlobalSection
 EndGlobal
