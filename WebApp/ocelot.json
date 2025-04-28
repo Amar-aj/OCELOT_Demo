@@ -4,9 +4,9 @@
   },
   "Routes": [
     {
-      "UpstreamPathTemplate": "/catalog/weatherforecast",
+      "UpstreamPathTemplate": "/catalog/{everything}",
       "UpstreamHttpMethod": [ "GET" ],
-      "DownstreamPathTemplate": "/catalog/weatherforecast",
+      "DownstreamPathTemplate": "/catalog/{everything}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -17,9 +17,9 @@
       "SwaggerKey": "Catalog"
     },
     {
-      "UpstreamPathTemplate": "/auth/weatherforecast",
+      "UpstreamPathTemplate": "/auth/{everything}",
       "UpstreamHttpMethod": [ "GET" ],
-      "DownstreamPathTemplate": "/auth/weatherforecast",
+      "DownstreamPathTemplate": "/auth/{everything}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
