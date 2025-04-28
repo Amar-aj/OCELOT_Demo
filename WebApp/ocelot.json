@@ -1,0 +1,56 @@
+{
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:5555"
+  },
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/catalog/weatherforecast",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamPathTemplate": "/catalog/weatherforecast",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5200
+        }
+      ],
+      "SwaggerKey": "Catalog"
+    },
+    {
+      "UpstreamPathTemplate": "/auth/weatherforecast",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamPathTemplate": "/auth/weatherforecast",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5300
+        }
+      ],
+      "SwaggerKey": "Auth"
+    }
+  ],
+
+  "SwaggerEndPoints": [
+    {
+      "Key": "Catalog",
+      "Config": [
+        {
+          "Name": "API Catalog",
+          "Version": "v1",
+          "Url": "https://localhost:5200/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "Auth",
+      "Config": [
+        {
+          "Name": "API Auth",
+          "Version": "v1",
+          "Url": "https://localhost:5300/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ]
+}
